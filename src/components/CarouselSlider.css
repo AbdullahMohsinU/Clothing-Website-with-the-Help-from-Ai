@@ -1,0 +1,81 @@
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.carousel-slide {
+  padding: 0 10px; /* Space between slides */
+  outline: none; /* Remove outline from slick slider */
+}
+
+.carousel-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 4 / 3; /* Consistent image aspect ratio */
+}
+
+/* Ensure slick slider arrows are styled */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px;
+  color: white;
+}
+
+/* Dots styling */
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #007bff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 10px;
+  }
+
+  .carousel-slide {
+    padding: 0 5px;
+  }
+
+  .carousel-img {
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    padding: 5px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 18px;
+  }
+}
